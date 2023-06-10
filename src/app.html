@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:site_name" content="Trace Herrell" />
+    <meta
+      property="og:title"
+      content="Software Development Leader, Cloud Architect"
+    />
+    <meta
+      property="og:description"
+      content="I have several years of experience building end to end solutions in a variety of verticals: healthcare, insurance, e-commerce, real estate, education, and IoT. I am competent engineer and dev manager comfortable in all areas of the software stack. In the last few years I have really used my experien..."
+    />
+
+    <meta
+      property="og:image"
+      content="https://profile.traceherrell.com/_app/assets/profile_standing.1ab7aa51.jpg"
+    />
+    <meta property="og:image:width" content="640" />
+    <meta property="og:image:height" content="1280" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/beercss@3.2.9/dist/cdn/beer.min.css"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/beercss@3.2.9/dist/cdn/beer.min.js"
+    ></script>
+    <script src="https://kit.fontawesome.com/98f378dec0.js" crossorigin="anonymous"></script>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100;300;400&display=swap"
+		rel="stylesheet"
+	/></head
+>
+	
+	<link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+
+    %sveltekit.head%
+  </head>
+
+  <body>
+    <style>
+      :root {
+        --primary: #4355b9;
+        --on-primary: #ffffff;
+        --primary-container: #dde0ff;
+        --on-primary-container: #000d61;
+        --secondary: #5b5d71;
+        --on-secondary: #ffffff;
+        --secondary-container: #e0e1fa;
+        --on-secondary-container: #171a2c;
+        --tertiary: #77536d;
+        --on-tertiary: #ffffff;
+        --tertiary-container: #ffd7f3;
+        --on-tertiary-container: #2d1228;
+        --error: #ba1b1b;
+        --error-container: #ffdad4;
+        --on-error: #ffffff;
+        --on-error-container: #410001;
+        --background: #fefbff;
+        --on-background: #1b1b1f;
+        --surface: #fefbff;
+        --on-surface: #1b1b1f;
+        --surface-variant: #e3e1ec;
+        --on-surface-variant: #46464f;
+        --outline: #767680;
+        --inverse-on-surface: #f3f0f5;
+        --inverse-surface: #303034;
+        --inverse-primary: #b9c3ff;
+        --shadow: #000000;
+        --font: Roboto
+      }
+    </style>
+     <!-- Calendly badge widget begin -->
+     <link
+     href="https://assets.calendly.com/assets/external/widget.css"
+     rel="stylesheet"
+   />
+   <script
+     src="https://assets.calendly.com/assets/external/widget.js"
+     type="text/javascript"
+     async
+   ></script>
+   <script type="text/javascript">
+     window.onload = function () {
+       Calendly.initBadgeWidget({
+         url: "https://calendly.com/trace-herrell",
+         text: "Schedule time with me",
+         color: "var(--primary)",
+         textColor: "#ffffff",
+         branding: true,
+       })
+       
+        var el = document.getElementsByClassName("calendly-badge-content")[0];
+        el.classList.add("button");
+        el.classList.add("small-round");
+        console.log("Badge widget successfully updated");
+
+       
+     };
+     
+
+   </script>
+   <!-- Calendly badge widget end -->
+    <div id="svelte">%sveltekit.body%</div>
+  </body>
+</html>
