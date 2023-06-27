@@ -12,7 +12,7 @@ COPY --from=builder /app/build build/
 COPY --from=builder /app/node_modules node_modules/
 COPY package.json ./
 ENV NODE_ENV=production
-CMD [ "node", "build" ]
+CMD [ "node","-r", "dotenv/config" "build" ]
 
 # docker run -d -p 3010:3000 --restart=always traceherrell/profile
 # docker run -d -p 3010:3000 traceherrell/profile
