@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: herrrell-profile
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: herrell-profile
+  template:
+    metadata:
+      labels:
+        app: herrell-profile
+    spec:
+      containers:
+        - image: docker.io/traceherrell/profile:latest
+          name: herrell-profile
+          ports:
+            - containerPort: 3000
